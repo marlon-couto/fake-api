@@ -4,9 +4,11 @@
   "description": "Deploy JSON Server to Vercel",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development node server.js"
   },
   "dependencies": {
+    "clone": "^2.1.2",
     "json-server": "^0.17.0"
   }
 }
